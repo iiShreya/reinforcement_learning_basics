@@ -41,6 +41,9 @@ Eg, Playing Chess
 **On-Policy**
 Such an algorithm uses the same policy for Acting and Updating.
 
+Eg. SARSA Algorithm
+
+
 **Off-Policy**
 Such an algorithm uses a diffrent policy for Acting and Updating.
 

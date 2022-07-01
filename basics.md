@@ -13,6 +13,7 @@
 5. Model
 
 ![Alt Text](https://lcalem.github.io/imgs/sutton/rl_basics.png)
+"Photo Credit: [Icalem](https://lcalem.github.io/)"
 
 
 # Definitions:
@@ -58,6 +59,31 @@ Prediction requires being able to compute or estimate the consequences of an act
 **Control Problem**
 Control requires the ability to choose a decision. Without control, agents would never act.
 
+## Exploration vs Exploitation
+**Exploration**
+- Allows an agent to improve its current knowledge about each action, hopefully leading to long-term benefit.
+- Improving the accuracy of the estimated action-values, enables an agent to make more informed decisions in the future
+
+**Exploitation**
+- Chooses the greedy action to get the most reward by exploiting the agent’s current action-value estimates.
+- But by being greedy with respect to action-value estimates, may not actually get the most reward and lead to sub-optimal behaviour.
+
+**Epsilon-Greedy Action Selection**
+It is the chance to balance between exploration and exploitation. 
+Exploitation: 1-ε
+Exploration: ε
+
+Generally we start with a high value for exploration and gradually as the agent receives greater returns, we decrease the value of exploration. Decreasing value of exploartion increases value for exploitation. Therefor, the agent acts greedy towards the end of episodic task/continuaing task.
+
+
+## Episodic Task vs Continuing Task 
+**Episodic Task**
+An episodic task lasts a finite amount of time. It has a terminal state.
+
+**Continuing Task**
+It is a task which never ends. That is why we add a discount factor for such a task where the mosre recent actions get a greater reward and past actions receive vanishing small rewards. 
+
+*Discount factor*: The discount factor essentially determines how much the reinforcement learning agents cares about rewards in the distant future relative to those in the immediate future.  𝛾, is a real value ∈ [0, 1]. 
 
 
 

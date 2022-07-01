@@ -12,7 +12,7 @@
 4. Action
 5. Model
 
-![Alt Text](https://lcalem.github.io/imgs/sutton/rl_basics.png)
+![Alt Text](https://lcalem.github.io/imgs/sutton/rl_basics.png)\
 "Photo Credit: [Icalem](https://lcalem.github.io/)"
 
 
